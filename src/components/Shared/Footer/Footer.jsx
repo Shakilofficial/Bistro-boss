@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="bg-[#111827] text-white text-center p-6 md:p-12 space-y-3 md:w-1/2">
           <div className="flex justify-center items-center gap-3">
             <img
-              className="h-10 w-10 justify-center items-center"
+              className="h-8 w-8 justify-center items-center"
               src={logo}
               alt=""
             />

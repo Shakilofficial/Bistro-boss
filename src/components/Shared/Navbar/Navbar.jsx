@@ -41,7 +41,7 @@ const Navbar = () => {
       </li>
       <li className="font-semibold list-none">
         <NavLink
-          to="/contact"
+          to="/menu"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#EEFF25]" : ""
           }
@@ -51,7 +51,7 @@ const Navbar = () => {
       </li>
       <li className="font-semibold list-none">
         <NavLink
-          to="/contact"
+          to="/shop"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#EEFF25]" : ""
           }
@@ -69,7 +69,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-opacity-70 bg-black max-w-7xl mx-auto fixed z-20 p-4 w-full">
+    <nav className="bg-opacity-70 bg-black max-w-[1440px] mx-auto fixed z-20 p-4 w-full">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between">
           <div className="flex space-x-4 gap-10">
@@ -81,7 +81,9 @@ const Navbar = () => {
                 className="flex justify-center items-center gap-2 text-gray-700 hover:text-gray-900"
               >
                 <img className="h-8 w-8" src={logo} alt="" />
-                <span className="font-bold text-amber-600 text-xl">Bistro Boss</span>
+                <span className="font-bold text-amber-600 text-xl">
+                  Bistro Boss
+                </span>
               </Link>
             </div>
 

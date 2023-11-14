@@ -12,7 +12,7 @@ const PopularMenu = () => {
       });
   }, []);
   return (
-    <section>
+    <section className="max-w-7xl mx-auto">
       <SectionTitle
         subHeading="Check it out"
         heading="FROM OUR MENU"
@@ -21,6 +21,11 @@ const PopularMenu = () => {
         {menu.map((item) => (
           <MenuItem key={item._id} item={item}></MenuItem>
         ))}
+      </div>
+      <div className="mt-6 flex justify-center items-center">
+        <button className="btn btn-sm border-0 border-b-2 btn-outline btn-warning">
+          View Full Menu
+        </button>
       </div>
     </section>
   );
